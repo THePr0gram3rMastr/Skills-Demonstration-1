@@ -42,7 +42,7 @@ public:
 
 	bool testID() const;
 	void idValidation(const Validate& otherValidate) const;
-	void userInput(uint16_t* PAC, uint16_t* userPAC, uint16_t ATTEMPS_REMAINING);
+	void userInput(uint16_t* PAC, uint16_t* userPAC, uint16_t ATTEMPTS_REMAINING);
 	bool testPAC() const;
 	bool pacValidation(const Validate& otherValidate) const;
 };
@@ -126,7 +126,7 @@ bool Validate::pacValidation(const Validate& otherValidate) const {
 		return true;
 	} else {
 		std::cout << "|" << std::setw(45) << "|" << std::endl;
-		
+
 		if (ATTEMPTS_REMAINING > 0) {
 			std::cout << "| PAC is invalid. Try again." << std::setw(18) << "|" << std::endl;
 			std::cout << "----------------------------------------------" << std::endl;
@@ -203,15 +203,15 @@ void openReport() {
 		"Sean"
 	};
 
-	int data[6][6] = { 
+	int data[6][6] = {
 		50,50,50,50,50,50,
 		50,50,50,50,50,50,
 		50,50,50,50,50,50,
 		50,50,50,50,50,50,
 		50,50,50,50,50,50,
-		50,50,50,50,50,50 
+		50,50,50,50,50,50
 	};
-	
+
 	Exams students[6];
 
 	Exams reports;

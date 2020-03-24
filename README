@@ -1,0 +1,26 @@
+Breakout
+
+A clone of the 1970s Atari game implemented in Java
+
+*********COMPILATION INSTRUCTIONS*********
+
+Note that this project makes use of Java Applets, which have been deprecated since JRE 9.
+
+In order to compile and run the project, go to https://www.oracle.com/java/technologies/javase-jre8-downloads.html and download the appropriate tar.gz compressed archive for your system.
+
+Then, open up Eclipse, go to Preferences -> Java -> Installed JREs and press "Add".
+
+Following this, in the "JRE Home" field, navigate to the location in which the folder you extracted from the compressed archive is located. It should be called "jre1.8.0_241.jre". Open this folder and you will a sub-directory named "Contents". 
+
+Open the "Contents" folder and inside it there will lie a "Home" directory. This is the directory that JRE Home will point to. 
+
+Next, give the JRE a name and press Finish. Make sure the new JRE is selected as the default (It will be ticked).
+
+You can run the application from inside of Eclipse once this is completed.
+
+
+*********Further Information*********
+
+While I had difficulty implementing collision detection amoung all of the bricks, I attempted to come up with a relatively efficient system for storing the x,y coordinates of every brick. While I was unsuccessful in implementing this system in the primary project, I did infact write an example of it in C++, just to test it out. 
+
+As a result I have left this C++ file along with the project itself. It contains comments explaining how it works and my different reasonings.
